@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Alunos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Sistema de Gestão de Alunos</h1>
+        <p>Cadastro e acompanhamento do desempenho dos estudantes.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Cadastrar estudante</h2>
+
+            <form id="formulario">
+
+                <div>
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" id="nome" placeholder="Digite o nome do aluno">
+                </div>
+
+                <div>
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" placeholder="Digite a idade">
+                </div>
+
+                <div>
+                    <label for="turma">Turma:</label>
+                    <input type="text" id="turma" placeholder="Digite a turma">
+                </div>
+
+                <div>
+                    <label for="nota1">Nota 1:</label>
+                    <input type="number" id="nota1" placeholder="Digite a primeira nota"
+                        min="0" max="10" step="0.1">
+                </div>
+
+                <div>
+                    <label for="nota2">Nota 2:</label>
+                    <input type="number" id="nota2" placeholder="Digite a segunda nota"
+                        min="0" max="10" step="0.1">
+                </div>
+
+                <p id="mensagem"></p>
+
+                <button type="submit">Cadastrar aluno</button>
+
+                <button type="reset">Limpar formulário</button>
+
+            </form>
+        </section>
+
+        <section>
+            <h2>Resumo dos estudantes</h2>
+
+            <div id="resumo">
+
+                <div>
+                    <h3>Total de alunos</h3>
+                    <p id="totalAlunos">0</p>
+                </div>
+
+                <div>
+                    <h3>Aprovados</h3>
+                    <p id="totalAprovados">0</p>
+                </div>
+
+                <div>
+                    <h3>Reprovados</h3>
+                    <p id="totalReprovados">0</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>Estudantes cadastrados</h2>
+
+            <div id="listaAlunos">
+                <p>Nenhum estudante cadastrado ainda.</p>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p>Sistema de Gestão de Alunos - 2026</p>
+    </footer>
+
+</body>
+
+</html>
